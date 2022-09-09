@@ -1,0 +1,166 @@
+<!--? Сообщаем браузеру как стоит обрабатывать эту страницу -->
+<!DOCTYPE html>
+<!--? Оболочка документа, указываем язык содерждимого -->
+<html lang="ru">
+<!--? Заголовок страницы, контейнер для других важных данных (не отображается) -->
+
+<head>
+	<!--? Кодировка страницы в браузере -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!--? Отключаем формирование ссылки у номера телефона на iOS -->
+	<meta name="format-detection" content="telephone+no">
+	<!--? Заголовок страницы в браузере -->
+	<title>I'm John</title>
+	<!--? Подключаем CSS -->
+	<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+	<div class="wraper">
+		<header class="header">
+			<div class="header__content container">
+				<div class="header__menu menu">
+					<div class="menu__icon icon-menu">
+						<span></span>
+						<span></span>
+						<span></span>
+					</div>
+					<nav class="menu__body">
+						<ul class="menu__list">
+							<li><a href="works.html" class="menu__link">Works</a></li>
+							<li><a href="blog.html" class="menu__link">Blog</a></li>
+							<li><a href="#!" class="menu__link">Contact</a></li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</header>
+		<main class="page">
+			<section class="hello">
+				<div class="hello__container container">
+					<div class="hello__content">
+						<h1 class="hello__title title">Hi, I am John,<br>Creative Technologist</h1>
+						<div class="hello__text text">
+							Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
+						</div>
+						<a href="#!" class="hello__btn btn">Download Resume</a>
+					</div>
+					<div class="hello__avatar">
+						<img src="img/avatar.jpg" alt="avatar">
+					</div>
+				</div>
+			</section>
+			<section class="recent-posts">
+				<div class="recent-posts__container container">
+					<div class="recent-posts__header">
+						<div class="recent-posts__title">Recent posts</div>
+						<a href="#!" class="recent-posts__view-all">View all</a>
+					</div>
+					<div class="recent-posts__items">
+						<div class="recent-posts__column">
+							<div class="recent-posts__item recent-post">
+								<a href="#!" class="recent-post__title">Making a design system from scratch</a>
+								<div class="recent-post__info">12 Feb 2020<span>|</span>Design, Pattern</div>
+								<div class="recent-post__text text">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</div>
+							</div>
+						</div>
+						<div class="recent-posts__column">
+							<div class="recent-posts__item recent-post">
+								<a href="#!" class="recent-post__title">Creating pixel perfect icons in Figma</a>
+								<div class="recent-post__info">12 Feb 2020<span>|</span>Figma, Icon Design</div>
+								<div class="recent-post__text text">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="feature-works">
+				<div class="feature-works__container container">
+					<div class="feature-works__title">Featured works</div>
+					<div class="feature-works__items works">
+						<article class="works__item">
+							<a href="#!" class="works__image ibg">
+								<img src="img/works/01.jpg" alt="work #1">
+							</a>
+							<div class="works__body">
+								<a href="article.html" class="works__title">Dedigning Dashboards</a>
+								<div class="works__info">
+									<div class="works__year"><span>2020</spa>
+									</div>
+									<div class="works__category">Dashboard</div>
+								</div>
+								<div class="works__text text">
+									Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
+								</div>
+							</div>
+						</article>
+						<article class="works__item">
+							<a href="#!" class="works__image ibg">
+								<img src="img/works/02.jpg" alt="work #2">
+							</a>
+							<div class="works__body">
+								<a href="#!" class="works__title">Vibrant Portraits of 2020</a>
+								<div class="works__info">
+									<div class="works__year">2018</div>
+									<div class="works__category">Illustration</div>
+								</div>
+								<div class="works__text text">
+									Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
+								</div>
+							</div>
+						</article>
+						<article class="works__item">
+							<a href="#!" class="works__image ibg">
+								<img src="img/works/03.jpg" alt="work #3">
+							</a>
+							<div class="works__body">
+								<a href="#!" class="works__title">36 Days of Malayalam type</a>
+								<div class="works__info">
+									<div class="works__year">2018</div>
+									<div class="works__category">Typography</div>
+								</div>
+								<div class="works__text text">
+									Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
+								</div>
+							</div>
+						</article>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer class="footer">
+			<div class="footer__container container">
+				<div class="footer__content">
+					<div class="footer__social social">
+						<a href="#!" class="social__link icon-fb"></a>
+						<a href="#!" class="social__link icon-insta"></a>
+						<a href="#!" class="social__link icon-linkedin"></a>
+						<a href="#!" class="social__link icon-twitter"></a>
+					</div>
+					<div class="footer__copy">Copyright ©2020 All rights reserved </div>
+				</div>
+			</div>
+		</footer>
+	</div>
+	<script src="js/script.js"></script>
+
+
+
+
+	<a href="" id="test"></a>
+	<ul>
+		<li class="item0001"></li>
+		<li class="item0002"></li>
+		<li class="item0003"></li>
+		<li class="item0004"></li>
+		<li class="item0005"></li>
+	</ul>
+	<div id="tel"></div>
+	<span class="menu" id="test"></span>
+	
+
+</body>
+
+</html>
