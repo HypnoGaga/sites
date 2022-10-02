@@ -1,4 +1,5 @@
 confl1
+confl2
 new line here
 add line
 
