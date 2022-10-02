@@ -1,4 +1,4 @@
-test text
+confl1
 new line here
 add line
 
