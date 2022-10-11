@@ -1,8 +1,0 @@
-confl1
-confl2
-new line here
-add line
-
-commit tess
-prikol-2
-gui line
