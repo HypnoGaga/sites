@@ -231,7 +231,7 @@ footer {
 img {
 	max-width: 100%;
 }
-/* === CARDS SECTION === */
+/* === CARDS SECTION ===================================== */
 .cards {
 	padding: 100px 0;
 	/* overflow: hidden; */
@@ -250,7 +250,6 @@ img {
 .cards__column {
 	flex: 0 0 50%;
 	padding: 0 15px;
-	/* min-width: 536px; */
 	margin: 0px 0px 30px 0px;
 }
 @media (max-width: 576px) {
@@ -292,6 +291,7 @@ img {
 	object-position: bottom;
 }
 .cards__content {
+	flex: 1 1 auto;
 	padding: 32px;
 	font-size: 0;
 	background-color: #fff;
@@ -353,7 +353,7 @@ img {
 		padding: 24px;
 	}
 }
-@media (max-width: 670px) {
+@media (max-width: 770px) {
 	.cards__item {
 		flex-direction: row;
 	}
