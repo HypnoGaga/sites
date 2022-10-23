@@ -1,0 +1,102 @@
+.colors {
+	/* RED Colors */
+	color: IndianRed; /* for text */
+	color: LightCoral; /* for text */
+	color: Salmon; /* for text */
+	color: DarkSalmon; /* nice one */
+	color: Crimson; /* for text */
+	color: FireBrick; /* for text */
+	color: DarkRed; /* for text */
+	/* PINK Colors */
+	color: Pink; /* for text */
+	color: LightPink; /* for text */
+	color: HotPink; /* for text */
+	color: DeepPink; /* for text */
+	color: MediumVioletRed; /* for text */
+	color: PaleVioletRed; /* for text */
+	/* ORANGE Colors */
+	color: LightSalmon;
+	color: Coral; /* for text */
+	color: Tomato; /* for text */
+	color: OrangeRed; /* for text */
+	color: DarkOrange; /* for text */
+	color: Orange; /* for text */
+	/* YELLOW Colors */
+	color: Gold;
+	color: LightYellow;
+	color: LemonChiffon;
+	color: PapayaWhip;
+	color: Moccasin;
+	color: PeachPuff;
+	color: PaleGoldenrod;
+	color: Khaki;
+	/* PURPLE Colors */
+	color: Lavender;
+	color: Plum; /* nice one */
+	color: Violet;
+	color: Orchid; /* nice one */
+	color: Magenta;
+	color: MediumOrchid; /* for text */
+	color: MediumPurple; /* nice one */
+	color: BlueViolet; /* for text */
+	color: DarkViolet; /* for text */
+	color: DarkOrchid; /* for text */
+	color: DarkMagenta; /* for text */
+	color: SlateBlue; /* for text very good */
+	color: DarkSlateBlue; /* for text */
+	color: MediumSlateBlue; /* for text */
+	/* GREEN Colors */
+	color: GreenYellow;
+	color: LimeGreen; /* for text */
+	color: MediumSeaGreen; /* for text */
+	color: SeaGreen; /* for text */
+	color: ForestGreen; /* for text */
+	color: OliveDrab; /* for text */
+	color: DarkOliveGreen; /* for text */
+	color: LightSeaGreen; /* for text */
+	color: DarkCyan; /* for text */
+	color: Teal;
+	/* BLUE Colors */
+	color: Aqua;
+	color: PaleTurquoise;
+	color: Turquoise;
+	color: MediumTurquoise;
+	color: DarkTurquoise;
+	color: CadetBlue; /* nice one more like green */
+	color: SteelBlue; /* very nice soft mid blue */
+	color: LightSteelBlue; /* nice one */
+	color: LightBlue;
+	color: SkyBlue;
+	color: LightSkyBlue;
+	color: DeepSkyBlue; /* nice one */
+	color: DodgerBlue; /* nice one */
+	color: CornflowerBlue; /* nice one */
+	color: MediumSlateBlue;
+	color: RoyalBlue; /* nice blue */
+	color: Navy;
+	color: MidnightBlue; /* nice dark-blue */
+	/* BROWN Colors */
+	color: Cornsilk;
+	color: BlanchedAlmond;
+	color: Bisque;
+	color: NavajoWhite;
+	color: Wheat;
+	color: BurlyWood;
+	color: RosyBrown;
+	color: SandyBrown;
+	color: SaddleBrown; /* nice brown */
+	color: Sienna; /* nice brown */
+	/* WHITE Colors */
+	color: HoneyDew;
+	color: AliceBlue;
+	color: WhiteSmoke;
+	color: Beige;
+	color: Ivory;
+	color: LavenderBlush;
+	color: MistyRose;
+	/* GRAY Colors */
+	color: DimGray; /* nice gray */
+	color: LightSlateGray; /* nice gray */
+	color: SlateGray; /* nice gray */
+	color: DarkSlateGray;
+}
