@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:wdth@regular,500,700c&display=swap");
+@font-face {
+  font-family: "icons";
+  font-display: swap;
+  src: url("../fonts/icons.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+  color: white;
+}
+[class^=icon-]::before,
+[class*=" icon-"]::before {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: "icons" !important;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-fb:before {
+  content: "\e900";
+}
+
+.icon-insta:before {
+  content: "\e901";
+}
+
+.icon-twitter:before {
+  content: "\e902";
+}
+
+.icon-linkedin:before {
+  content: "\e903";
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 24px;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.ibg {
+  position: relative;
+}
+.ibg img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.wraper {
+  padding: 50px;
+}
+
+.check {
+  padding-left: 30px;
+}
+.check__input {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+}
+.check__box {
+  position: absolute;
+  width: 1.2em;
+  height: 1.2em;
+  background-color: tomato;
+  background: url("../img/icons/checkbox/off.svg") center no-repeat;
+  margin-left: -30px;
+}
+.check__input:checked + .check__box {
+  background: url("../img/icons/checkbox/on.svg") center no-repeat;
+}
+.check__input:checked:focus-visible + .check__box {
+  background: url("../img/icons/checkbox/on-focus.svg") center no-repeat;
+}
+.check__input:focus-visible + .check__box {
+  background: url("../img/icons/checkbox/off-focus.svg") center no-repeat;
+}
+.check__input:disabled + .check__box {
+  background: url("../img/icons/checkbox/off-disable.svg") center no-repeat;
+}
+.check__input:checked:disabled + .check__box {
+  background: url("../img/icons/checkbox/on-disable.svg") center no-repeat;
+}
+.check:focus .check__input + .check__box {
+  background: url("../img/icons/checkbox/off-focus.svg") center no-repeat;
+}
+
+.option {
+  display: block;
+}
+
+label {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}/*# sourceMappingURL=style.css.map */

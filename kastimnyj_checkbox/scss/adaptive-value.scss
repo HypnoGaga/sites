@@ -1,0 +1,58 @@
+@use "sass:math";
+
+///	АДАПТИВНОЕ СВОЙСТВО=========================================
+@mixin adaptive-value($property, $maxValue, $minValue, $whenUseIt, $maxWidth, $minWidth) {
+	// СВОЙСТВО РАБОТАЕТ ПРИ ШИРИНЕ ЭКРАНА от <<< $minWidth >>> и до <<< $maxWidth >>>
+	@if $whenUseIt == mid {
+		#{$property}: $maxValue + px;
+		@media (max-width: #{$maxWidth + px}) {
+			#{$property}: calc(#{$minValue + px} + (#{$maxValue} - #{$minValue}) * ((100vw - #{$minWidth + px}) / (#{$maxWidth} - #{$minWidth})));
+		}
+		@media (max-width: #{$minWidth + px}) {#{$property}: $minValue + px;}
+	// СВОЙСТВО РАБОТАЕТ ПРИ ШИРИНЕ ЭКРАНА МЕНЬШЕ <<< $maxWidth >>>
+	} @else if $whenUseIt == less {
+		#{$property}: $maxValue + px;
+		@media (max-width: #{$maxWidth + px}) {
+			#{$property}: calc(#{$minValue + px} + (#{$maxValue} - #{$minValue}) * ((100vw - #{$minWidth + px}) / (#{$maxWidth} - #{$minWidth})));
+		}
+	// СВОЙСТВО РАБОТАЕТ ПРИ ШИРИНЕ ЭКРАНА БОЛЬШЕ <<< $minWidth >>>
+	} @else if $whenUseIt == more {
+		@media (min-width: #{$minWidth + px}) {
+			#{$property}: calc(#{$minValue + px} + (#{$maxValue} - #{$minValue}) * ((100vw - #{$minWidth + px}) /(#{$maxWidth} - #{$minWidth})));
+		}
+		@media (max-width: #{$minWidth + px}) {#{$property}: $minValue + px;}
+	// СВОЙСТВО РАБОТАЕТ ВСЕГДА
+	} @else {
+		#{$property}: calc(#{$minValue + px} + (#{$maxValue} - #{$minValue}) * ((100vw - #{$minWidth + px}) / (#{$maxWidth} - #{$minWidth})));
+	}
+}
+
+///	АДАПТИВНЫЙ ТЕКСТ============================================
+@mixin adaptive-font($maxFontSize, $minFontSize, $whenUseIt, $maxWidth, $minWidth) {
+	// СВОЙСТВО РАБОТАЕТ ПРИ ШИРИНЕ ЭКРАНА от <<< $minWidth >>> и до <<< $maxWidth >>>
+	@if $whenUseIt == mid {
+		font-size: $maxFontSize + px;
+		@media (max-width: #{$maxWidth + px}) {
+			font-size: calc(#{$minFontSize + px} + (#{$maxFontSize} - #{$minFontSize}) * ((100vw - #{$minWidth + px}) / (#{$maxWidth} - #{$minWidth})));
+		}
+		@media (max-width: #{$minWidth + px}) {font-size: $minFontSize + px;}
+
+	// СВОЙСТВО РАБОТАЕТ ПРИ ШИРИНЕ ЭКРАНА МЕНЬШЕ <<< $maxWidth >>>
+	} @else if $whenUseIt == less {
+		font-size: $maxFontSize + px;
+		@media (max-width: #{$maxWidth + px}) {
+			font-size: calc(#{$minFontSize + px} + (#{$maxFontSize} - #{$minFontSize}) * ((100vw - #{$minWidth + px}) / (#{$maxWidth} - #{$minWidth})));
+		}
+
+	// СВОЙСТВО РАБОТАЕТ ПРИ ШИРИНЕ ЭКРАНА БОЛЬШЕ <<< $minWidth >>>
+	} @else if $whenUseIt == more {
+		@media (min-width: #{$minWidth + px}) {
+			font-size: calc(#{$minFontSize + px} + (#{$maxFontSize} - #{$minFontSize}) * ((100vw - #{$minWidth + px}) / (#{$maxWidth} - #{$minWidth})));
+		}
+		@media (max-width: #{$minWidth + px}) {font-size: $minFontSize + px;}
+
+	// СВОЙСТВО РАБОТАЕТ ВСЕГДА
+	} @else {
+		font-size: calc(#{$minFontSize + px} + (#{$maxFontSize} - #{$minFontSize}) * ((100vw - #{$minWidth + px}) / (#{$maxWidth} - #{$minWidth})));
+	}
+}
