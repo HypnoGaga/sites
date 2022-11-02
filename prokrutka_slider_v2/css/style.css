@@ -1,0 +1,78 @@
+@import url('reser.css');
+body {
+	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+.wrapper {
+	height: 100%;
+	display: flex;
+	gap: 50px;
+	justify-content: center;
+	align-items: center;
+}
+.box {
+	color: hsl(0, 0%, 100%);
+	font-style: 2rem;
+	width: 500px;
+	height: 500px;
+	overflow: auto;
+	font-size: 0;
+	scroll-snap-type: x mandatory;
+	white-space: nowrap;
+}
+.box .item {
+	display: inline-block;
+}
+.item {
+	letter-spacing: 2px;
+	font-size: 24px;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	padding: 20px;
+	scroll-snap-align: start;
+	scroll-snap-stop: always;
+}
+.item:nth-child(1) {
+	background:
+		linear-gradient(180deg, hsl(0, 0%, 0%, 0.8), transparent 30%),
+		url('//picsum.photos/id/55/1000') 0 0 / cover no-repeat;
+}
+.item:nth-child(2) {
+	background:
+		linear-gradient(180deg, hsl(0, 0%, 0%, 0.8), transparent 30%),
+		url('//picsum.photos/id/56/1000') 0 0 / cover no-repeat;
+}
+.item:nth-child(3) {
+	background:
+		linear-gradient(180deg, hsl(0, 0%, 0%, 0.8), transparent 30%),
+		url('//picsum.photos/id/57/1000') 0 0 / cover no-repeat;
+}
+.item:nth-child(4) {
+	background:
+		linear-gradient(180deg, hsl(0, 0%, 0%, 0.8), transparent 30%),
+		url('//picsum.photos/id/58/1000') 0 0 / cover no-repeat;
+}
+.item:nth-child(5) {
+	background:
+		linear-gradient(180deg, hsl(0, 0%, 0%, 0.8), transparent 30%),
+		url('//picsum.photos/id/59/1000') 0 0 / cover no-repeat;
+}
+.item:nth-child(6) {
+	background:
+		linear-gradient(180deg, hsl(0, 0%, 0%, 0.8), transparent 30%),
+		url('//picsum.photos/id/62/1000') 0 0 / cover no-repeat;
+}
+.item:nth-child(7) {
+	background:
+		linear-gradient(180deg, hsl(0, 0%, 0%, 0.8), transparent 30%),
+		url('//picsum.photos/id/61/1000') 0 0 / cover no-repeat;
+}
+.block-icon {
+	width: 200px;
+	height: 200px;
+}
+.block-icon svg {
+	width: 100px;
+	color: white;
+	fill: red;
+}
