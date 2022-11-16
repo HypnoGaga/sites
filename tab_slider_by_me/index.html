@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Tab slider by me</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+	<section class="slider-section">
+		<input type="radio" name='slide' id='slide-1' checked>
+		<input type="radio" name='slide' id='slide-2'>
+		<input type="radio" name='slide' id='slide-3'>
+		<input type="radio" name='slide' id='slide-4'>
+		<div class="slider-wrapper">
+			<h2 class="slider__title">👉Slider👈</h2>
+			<div class="slider__content slider">
+				<div class="slider__nav nav-slider">
+					<div class="nav-slider__button nav-slider__button--left">
+						<label for="slide-1"></label>
+						<label for="slide-2"></label>
+						<label for="slide-3"></label>
+						<label for="slide-4"></label>
+					</div>
+					<div class="nav-slider__button nav-slider__button--right">
+						<label for="slide-1"></label>
+						<label for="slide-2"></label>
+						<label for="slide-3"></label>
+						<label for="slide-4"></label>
+					</div>
+				</div>
+				<div class="slider__slides">
+					<div class="slider__slide slide">slide-1</div>
+					<div class="slider__slide slide">slide-2</div>
+					<div class="slider__slide slide">slide-3</div>
+					<div class="slider__slide slide">slide-4</div>
+				</div>
+				<div class="slider__bullets bullets">
+					<label for='slide-1' class="bullets__bullet bullet"></label>
+					<label for='slide-2' class="bullets__bullet bullet"></label>
+					<label for='slide-3' class="bullets__bullet bullet"></label>
+					<label for='slide-4' class="bullets__bullet bullet"></label>
+				</div>
+			</div>
+		</div>
+	</section>
+</body>
+
+</html>

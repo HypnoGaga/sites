@@ -1,0 +1,84 @@
+@import 'reset.css';
+:root {
+	--color-brown: hsl(25, 56%, 17%);
+	--color-green: hsl(114, 79%, 15%);
+	--color-white: hsl(0, 0%, 100%);
+	--color-gray: hsl(0, 0%, 88%);
+	--color-text-white: var(--color-white);
+}
+body {
+	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+/* .invisible {
+	opacity: 0;
+	visibility: hidden;
+	height: 1px;
+	width: 1px;
+	position: absolute;
+	top: 0;
+	left: 0;
+} */
+[class*='__container'] {
+	max-width: 1110px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+.title {
+	font-size: 36px;
+	font-weight: 700;
+}
+.title--center {
+	text-align: center;
+}
+.section__title:not(:last-child) {
+	margin-bottom: 25px;
+}
+.tab {}
+.tab__nan {
+	font-size: 0;
+}
+.tab__btn {
+	display: inline-block;
+	text-align: center;
+	font-size: 18px;
+	font-weight: 700;
+	padding: 20px 10px;
+	min-width: 60px;
+	background-color: var(--color-green);
+	color: var(--color-text-white);
+	cursor: pointer;
+	transition: opacity 0.2s ease-in-out 0s;
+}
+.tab__btn:hover {
+	opacity: 0.8;
+}
+.tab__btn:first-child {
+	border-top-left-radius: 4px;
+}
+.tab__btn:not(:last-child) {
+	border-right: 1px solid var(--color-gray);
+}
+.tab__btn:last-child {
+	border-top-right-radius: 4px;
+}
+.tab__wrapper {}
+.tab__section {
+	border: 1px solid var(--color-gray);
+	padding: 15px 10px;
+	display: none;
+}
+#tab-01:checked ~ .section__container .tab__btn:nth-child(1),
+#tab-02:checked ~ .section__container .tab__btn:nth-child(2),
+#tab-03:checked ~ .section__container .tab__btn:nth-child(3),
+#tab-04:checked ~ .section__container .tab__btn:nth-child(4) 
+{
+	opacity: 0.4;
+	cursor: default;
+}
+#tab-01:checked ~ .section__container .tab__section:nth-child(1),
+#tab-02:checked ~ .section__container .tab__section:nth-child(2),
+#tab-03:checked ~ .section__container .tab__section:nth-child(3),
+#tab-04:checked ~ .section__container .tab__section:nth-child(4) 
+{
+	display: block;
+}
