@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>01-button-gradient-border</title>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+	<div class="wrapper">
+		<div class="white-grad">Some text here</div>
+		<button class='button' type='button'>Button
+			<svg xmlns="http://www.w3.org/2000/svg">
+				<linearGradient id="Gradient" x1="40%" y1="40%" x2="60%" y2="60%" gradientUnits="userSpaceOnUse">
+					<stop stop-color="#9c20aa" offset="0%" />
+					<stop stop-color="#9c20aa" offset="50%" />
+					<stop stop-color="#fb3570" offset="50%" />
+					<stop stop-color="#fb3570" offset="100%" />
+				</linearGradient>
+				<rect x="5" y="5" height="100%" width="100%" style="width:calc(100% - 10px);height:calc(100% - 10px)" rx="20" ry="20" stroke-width="20" fill="transparent" stroke="url(#Gradient)" />
+			</svg>
+		</button>
+	</div>
+</body>
+
+</html>
