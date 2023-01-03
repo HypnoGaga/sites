@@ -98,9 +98,6 @@ body {
   background-color: #fff;
   visibility: hidden;
   opacity: 0;
-  -webkit-transition: all 0.8s ease 0s;
-  -o-transition: all 0.8s ease 0s;
-  transition: all 0.8s ease 0s;
 }
 
 .lock body {
@@ -112,6 +109,9 @@ body {
 }
 
 .loaded body {
+  -webkit-transition: visibility 0.8s ease 0s, opacity 0.8s ease 0s;
+  -o-transition: visibility 0.8s ease 0s, opacity 0.8s ease 0s;
+  transition: visibility 0.8s ease 0s, opacity 0.8s ease 0s;
   visibility: visible;
   opacity: 1;
 }
@@ -521,10 +521,6 @@ body {
   max-width: 100%;
 }
 
-:root {
-  --app-height: 100%;
-}
-
 .main {
   position: relative;
   height: 100vh;
@@ -532,9 +528,9 @@ body {
 }
 
 .loaded .main {
-  -webkit-transition: all 0.8s ease 0s;
-  -o-transition: all 0.8s ease 0s;
-  transition: all 0.8s ease 0s;
+  -webkit-transition: height 0.8s ease 0s;
+  -o-transition: height 0.8s ease 0s;
+  transition: height 0.8s ease 0s;
 }
 
 .main__bg-image {
@@ -558,7 +554,6 @@ body {
 
 .main__container {
   height: 100%;
-  padding-top: 152px;
   padding-bottom: 80px;
   display: -ms-grid;
   display: grid;
