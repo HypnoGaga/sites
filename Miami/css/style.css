@@ -35,10 +35,6 @@ body {
   min-width: 320px;
 }
 
-html {
-  scroll-behavior: smooth;
-}
-
 body {
   color: #3E3E3E;
   line-height: 1;
@@ -255,6 +251,10 @@ body {
 ._header-scroll .header__container {
   min-height: 50px;
   padding-block: 4px;
+}
+
+.menu-open ._header-scroll .header__container {
+  padding-block: 10px;
 }
 
 .header__logo {
@@ -511,9 +511,17 @@ body {
   max-width: 100%;
 }
 
+:root {
+  --app-height: 100%;
+}
+
 .main {
-  min-height: 100vh;
+  -webkit-transition: all 0.5s ease 0s;
+  -o-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
   position: relative;
+  height: 100vh;
+  height: var(--app-height);
 }
 
 .main__bg-image {
@@ -536,7 +544,11 @@ body {
 }
 
 .main__container {
-  min-height: 100vh;
+  -webkit-transition: all 0.5s ease 0s;
+  -o-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
+  height: 100vh;
+  height: var(--app-height);
   padding-top: 152px;
   padding-bottom: 80px;
   display: -ms-grid;
