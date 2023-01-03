@@ -96,6 +96,11 @@ svg path {
 body {
   color: #3E3E3E;
   background-color: #fff;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: all 0.8s ease 0s;
+  -o-transition: all 0.8s ease 0s;
+  transition: all 0.8s ease 0s;
 }
 
 .lock body {
@@ -104,6 +109,11 @@ body {
       touch-action: none;
   -ms-scroll-chaining: none;
       overscroll-behavior: none;
+}
+
+.loaded body {
+  visibility: visible;
+  opacity: 1;
 }
 
 .wrapper {
@@ -516,12 +526,15 @@ body {
 }
 
 .main {
-  -webkit-transition: all 0.5s ease 0s;
-  -o-transition: all 0.5s ease 0s;
-  transition: all 0.5s ease 0s;
   position: relative;
   height: 100vh;
   height: var(--app-height);
+}
+
+.loaded .main {
+  -webkit-transition: all 0.8s ease 0s;
+  -o-transition: all 0.8s ease 0s;
+  transition: all 0.8s ease 0s;
 }
 
 .main__bg-image {
@@ -544,11 +557,7 @@ body {
 }
 
 .main__container {
-  -webkit-transition: all 0.5s ease 0s;
-  -o-transition: all 0.5s ease 0s;
-  transition: all 0.5s ease 0s;
-  height: 100vh;
-  height: var(--app-height);
+  height: 100%;
   padding-top: 152px;
   padding-bottom: 80px;
   display: -ms-grid;
