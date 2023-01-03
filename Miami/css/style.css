@@ -855,9 +855,6 @@ body {
 .form-contacts__input,
 .form-contacts__textarea {
   outline: none;
-  -webkit-transition: border 0.3s ease 0s;
-  -o-transition: border 0.3s ease 0s;
-  transition: border 0.3s ease 0s;
   border: 2px solid transparent;
 }
 
@@ -1446,8 +1443,20 @@ body {
     border: 2px solid #CCD0E0;
   }
 
+  .form-contacts__input,
+  .form-contacts__textarea {
+    -webkit-transition: border 0.3s ease 0s;
+    -o-transition: border 0.3s ease 0s;
+    transition: border 0.3s ease 0s;
+  }
+
   .form-contacts__input:hover,
   .form-contacts__textarea:hover {
     border: 2px solid #CCD0E0;
+  }
+
+  .form-contacts__input:focus:hover,
+  .form-contacts__textarea:focus:hover {
+    border: 2px solid #0075FF;
   }
 }
