@@ -645,6 +645,13 @@ body {
 }
 
 .item-gallery__image {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-width: 100%;
+  min-height: 100%;
+  border-radius: 8px;
+  overflow: hidden;
   position: relative;
 }
 
@@ -660,17 +667,7 @@ body {
   padding-bottom: 100%;
 }
 
-.item-gallery__image .item-gallery__wrap {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  border-radius: 10px;
-  overflow: hidden;
-}
-
-.item-gallery__image .item-gallery__wrap img {
+.item-gallery__image img {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -686,7 +683,7 @@ body {
   will-change: transform;
 }
 
-.item-gallery__image .item-gallery__wrap:hover img {
+.item-gallery__image:hover img {
   -webkit-transform: scale(1.22);
       -ms-transform: scale(1.22);
           transform: scale(1.22);
