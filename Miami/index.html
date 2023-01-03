@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20230103112200">
+	<link rel="stylesheet" href="css/style.min.css?_v=20230103130642">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,18 +14,18 @@
 
 <body>
 	<div class="wrapper">
-		<header class="header">
+		<header class="header" data-lp>
 			<div class="header__container">
 				<div class="header__menu menu">
 					<button type='button' class='menu__icon icon-menu'><span></span></button>
 					<nav class="menu__body">
 						<div class="menu__container">
 							<ul class="menu__list">
-								<li class="menu__item"><a href="#" class="menu__link">Home</a></li>
-								<li class="menu__item"><a href="#" class="menu__link">About Us</a></li>
-								<li class="menu__item"><a href="#" class="menu__link">gallery</a></li>
-								<li class="menu__item"><a href="#" class="menu__link">testimonials</a></li>
-								<li class="menu__item"><a href="#" class="menu__link">Contacts</a></li>
+								<li class="menu__item"><a data-goto-top='70' data-goto='#main' href="#" class="menu__link">Home</a></li>
+								<li class="menu__item"><a data-goto-top='70' data-goto='#about-us' href="#" class="menu__link">About Us</a></li>
+								<li class="menu__item"><a data-goto-top='70' data-goto='#gallery' href="#" class="menu__link">gallery</a></li>
+								<li class="menu__item"><a data-goto-top='70' data-goto='#testimonials' href="#" class="menu__link">testimonials</a></li>
+								<li class="menu__item"><a data-goto-top='70' data-goto='#contacts' href="#" class="menu__link">Contacts</a></li>
 							</ul>
 							<div class="menu__actions">
 								<div class="menu__number-phone">+1 234 555-55-55</div>
@@ -43,7 +43,7 @@
 			</div>
 		</header>
 		<main class="page">
-			<section class="page__main main">
+			<section class="page__main main" id='main'>
 				<div class="main__bg-image">
 					<picture><source srcset="img/main-block/01.webp" type="image/webp"><img src="img/main-block/01.jpg" alt="background"></picture>
 				</div>
@@ -51,7 +51,7 @@
 					<h1 class="main__title">Miami<br>Condo Kings</h1>
 				</div>
 			</section>
-			<section class="page__about about">
+			<section class="page__about about" id='about-us'>
 				<div class="about__container">
 					<div class="about__heading">
 						<h2 class="about__title">Miami best <br> Real estate <span>here</span></h2>
@@ -69,7 +69,7 @@
 					</div>
 				</div>
 			</section>
-			<section class="page__gallery gallery">
+			<section class="page__gallery gallery" id='gallery'>
 				<div class="gallery__container">
 					<div class="gallery__title-block title-block">
 						<h3 class="title-block__title">Gallery</h3>
@@ -119,7 +119,7 @@
 					<button class="gallery__button button button--secondary" type='button'>View all</button>
 				</div>
 			</section>
-			<section class="page__testimonials testimonials">
+			<section class="page__testimonials testimonials" id='testimonials'>
 				<div class="testimonials__container">
 					<div class="testimonials__title-block title-block">
 						<h3 class="title-block__title">Testimonials</h3>
@@ -159,7 +159,7 @@
 					</div>
 				</div>
 			</section>
-			<section class="page__contacts contacts">
+			<section class="page__contacts contacts" id='contacts'>
 				<div class="contacts__container">
 					<div class="contacts__title-block title-block">
 						<h3 class="title-block__title">Contact us</h3>
@@ -208,7 +208,7 @@
 			</div>
 		</footer>
 	</div>
-	<script src="js/app.min.js?_v=20230103112200"></script>
+	<script src="js/app.min.js?_v=20230103130642"></script>
 </body>
 
 </html>
