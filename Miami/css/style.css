@@ -644,6 +644,16 @@ body {
   margin-bottom: 24px;
 }
 
+.item-gallery__wrapp {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.item-gallery__wrapp > * {
+  width: 100%;
+}
+
 .item-gallery__image {
   border-radius: 8px;
   overflow: hidden;
@@ -1047,6 +1057,16 @@ body {
 
   .about__heading {
     max-width: 250px;
+  }
+
+  .item-gallery:nth-child(4n+1) .item-gallery__wrapp:first-child {
+    -ms-grid-column-span: 8;
+    grid-column: span 8;
+  }
+
+  .item-gallery:nth-child(4n+1) .item-gallery__wrapp:last-child {
+    -ms-grid-column-span: 4;
+    grid-column: span 4;
   }
 
   .item-gallery:nth-child(4n+1) .item-gallery__image:first-child {
