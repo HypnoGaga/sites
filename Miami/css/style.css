@@ -854,16 +854,16 @@ body {
 
 .form-contacts__input,
 .form-contacts__textarea {
-  -webkit-transition: outline 0.3s ease 0s;
-  -o-transition: outline 0.3s ease 0s;
-  transition: outline 0.3s ease 0s;
-  outline: 2px solid transparent;
-  outline-offset: -2px;
+  outline: none;
+  -webkit-transition: border 0.3s ease 0s;
+  -o-transition: border 0.3s ease 0s;
+  transition: border 0.3s ease 0s;
+  border: 2px solid transparent;
 }
 
 .form-contacts__input:focus,
 .form-contacts__textarea:focus {
-  outline: 2px solid #0075FF;
+  border: 2px solid #0075FF;
 }
 
 .form-contacts__button {
@@ -1448,6 +1448,6 @@ body {
 
   .form-contacts__input:hover,
   .form-contacts__textarea:hover {
-    outline: 2px solid #CCD0E0;
+    border: 2px solid #CCD0E0;
   }
 }
