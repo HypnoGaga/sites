@@ -535,7 +535,7 @@ body {
   width: 40px;
   height: 2px;
   background-color: hsl(0deg, 0%, 100%);
-  border-radius: 50%;
+  border-radius: 50px;
 }
 
 .about__container {
