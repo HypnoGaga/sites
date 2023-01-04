@@ -325,9 +325,13 @@
             script_bodyUnlock();
         }
     }
+    const doc = document.documentElement;
+    doc.style.setProperty("--app-height", `${window.innerHeight}px`);
     const appHeight = () => {
-        const doc = document.documentElement;
-        doc.style.setProperty("--app-height", `${window.innerHeight}px`);
+        if (document.querySelector(".main").classList.contains("_watcher-view")) {
+            const doc = document.documentElement;
+            doc.style.setProperty("--app-height", `${window.innerHeight}px`);
+        }
     };
     window.addEventListener("resize", appHeight);
     appHeight();
