@@ -234,8 +234,7 @@ body {
 .button--secondary {
   color: #0075FF;
   background-color: rgba(255, 255, 255, 0);
-  outline: 2px solid #0075FF;
-  outline-offset: -2px;
+  border: 2px solid #0075FF;
   -webkit-box-shadow: none;
           box-shadow: none;
 }
@@ -1613,7 +1612,7 @@ body {
   }
 
   .button--secondary:hover {
-    outline: 2px solid #005ECC;
+    border: 2px solid #005ECC;
     color: #fff;
     background-color: #005ECC;
   }
