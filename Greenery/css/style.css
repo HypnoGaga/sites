@@ -836,7 +836,7 @@ body {
 }
 
 .aside__body {
-  display: none;
+  height: 100%;
   padding: 20px 0;
   color: hsl(0deg, 0%, 100%);
   display: -webkit-box;
@@ -878,9 +878,6 @@ body {
 
 .menu__link {
   padding: 20px 0;
-  -webkit-box-flex: 100%;
-      -ms-flex: 100%;
-          flex: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -895,11 +892,6 @@ body {
   -webkit-transition: all 0.3s ease 0s;
   -o-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
-}
-
-.menu__link.active {
-  background: #3C6C7F;
-  pointer-events: none;
 }
 
 .menu__link--home svg {
@@ -1684,6 +1676,17 @@ body {
   .aside {
     max-width: 165px;
   }
+
+  .menu__link.active {
+    background: #3C6C7F;
+    pointer-events: none;
+  }
+}
+
+@media (min-width: 992px) and (any-hover: hover) {
+  .menu__link:hover {
+    background-color: #284955;
+  }
 }
 
 @media (min-width: 1400px) {
@@ -1834,6 +1837,47 @@ body {
 
   .menu-open .aside {
     left: 0;
+  }
+
+  .aside__body {
+    gap: 60px;
+  }
+
+  .menu__body {
+    display: -ms-grid;
+    display: grid;
+    justify-items: center;
+  }
+
+  .menu__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+
+  .menu__item:not(:last-child) {
+    margin-bottom: 20px;
+  }
+
+  .menu__link {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    padding: 0;
+  }
+}
+
+@media (max-width: 991.98px) and (any-hover: hover) {
+  .menu__link:hover:hover {
+    color: rgb(76, 153, 143);
   }
 }
 
@@ -2528,10 +2572,6 @@ body {
 
   .slider-main__pagination .swiper-pagination-bullet:hover {
     background-color: rgba(103, 127, 139, 0.4588235294);
-  }
-
-  .menu__link:hover {
-    background-color: #284955;
   }
 
   .item-product__body:hover {
