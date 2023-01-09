@@ -2100,10 +2100,6 @@ body {
   .sale__label {
     text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.637);
   }
-
-  .sale__button {
-    width: 100%;
-  }
 }
 
 @media (max-width: 20em) {
